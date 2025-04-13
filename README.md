@@ -4,8 +4,8 @@
 
 Подготовка защищаемой системы:
 
-установите Suricata,
-установите Fail2Ban.
+- установите Suricata,
+- установите Fail2Ban.
 
 Подготовка системы злоумышленника: установите nmap и thc-hydra либо скачайте и установите Kali linux.
 
@@ -15,10 +15,10 @@
 
 Проведите разведку системы и определите, какие сетевые службы запущены на защищаемой системе:
 
-sudo nmap -sA < ip-адрес >
-sudo nmap -sT < ip-адрес >
-sudo nmap -sS < ip-адрес >
-sudo nmap -sV < ip-адрес >
+- sudo nmap -sA < ip-адрес >
+- sudo nmap -sT < ip-адрес >
+- sudo nmap -sS < ip-адрес >
+- sudo nmap -sV < ip-адрес >
 
 По желанию можете поэкспериментировать с опциями: https://nmap.org/man/ru/man-briefoptions.html.
 
@@ -28,7 +28,7 @@ sudo nmap -sV < ip-адрес >
 
 Проведите атаку на подбор пароля для службы SSH:
 
-hydra -L users.txt -P pass.txt < ip-адрес > ssh
+- hydra -L users.txt -P pass.txt < ip-адрес > ssh
 
 Настройка hydra:
 
